@@ -5,7 +5,14 @@
   
     let browser = null
     let page = null
+
+    const cats = ['Bill', 'Jeff', 'Pete', 'Biggles', 'Jasmin'];
+
+
+  for (let i=0; i < cats.length; i++)  {
   
+  
+
     try {
       browser = await puppeteer.launch({ headless: true })
       page = await browser.newPage()
@@ -58,4 +65,5 @@
         await browser.close()
       }
     }
+  }
   })()
