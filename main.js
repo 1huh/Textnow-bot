@@ -6,10 +6,8 @@
     let browser = null
     let page = null
 
-    const cats = ['Bill', 'Jeff', 'Pete', 'Biggles', 'Jasmin'];
 
-
-  for (let i=0; i < cats.length; i++)  {
+  for (let i = 0; i < 10; i++)  {
   
   
 
@@ -29,7 +27,7 @@
         await page.setCookie(...cookies)
         cookies = await bot.login(page, client)
       }
-      catch (error) {
+      catch (error) {qaQ    
         console.info('Unable to log in using existing cookies...')
   
         // Provide account credentials for fallback login
@@ -47,8 +45,8 @@
       await bot.selectConversation(page, recipient)
   
       // Send message in conversation
-      const message = 'hello world'
-      const delay = 500
+      const message = 'big pp man'
+      const delay = 100
       await bot.sendMessage(page, message, delay)
     }
     catch (error) {
